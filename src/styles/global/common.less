@@ -10,7 +10,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: @gray;
+    background-color: @grey;
     background-image: url(../assets/images/noise.png);
     background-position: 0 0, 0 0;
     background-size: auto, 100% auto;
@@ -29,8 +29,12 @@ body{
     flex: 1 0 auto;
 }
 
-.page-footer{
-    flex: 0 0 auto;
+.home {
+    padding: 100px 0;
+                
+    &__listing {
+      margin-bottom: 95px;
+    }
 }
 
 a {
@@ -44,3 +48,27 @@ img {
     object-fit: cover;
 }
 
+input,
+select,
+textarea {
+    outline: none ;
+    box-shadow: none;
+    font-family: @font1;
+    color: @black;
+}
+
+textarea{
+    resize: none;
+}
+
+input,
+textarea{
+    &::placeholder{
+        color: @grey_popup;
+    }
+}
+
+input:focus,
+textarea:focus{
+    color: transparent;
+}

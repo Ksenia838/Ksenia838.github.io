@@ -10,12 +10,13 @@
     text-decoration: none;
     width: 100%;
     color: #1F1E1E;
+    &:hover{
+        color: #BC3324;
+        text-decoration-color: #BC3324;
+    }
 }
 
-.event-card__link:hover .event-card__title{
-    color: #BC3324;
-    text-decoration-color: #BC3324;
-}
+
 
 .event-card__picture{
     display: block;
@@ -25,14 +26,14 @@
     font-size: 0;
     text-decoration: none;
     overflow: hidden;
+    &::after{
+        content: '';
+        display: block;
+        width: 100%;
+        padding-top: 107.16%;
+    }
 }
 
-.event-card__picture::after{
-    content: '';
-    display: block;
-    width: 100%;
-    padding-top: 107.16%;
-}
 
 .event-card__img{
     display: block;
@@ -53,6 +54,10 @@
     color: #1F1E1E;
     text-decoration: underline transparent;
     transition: color 0.2s, text-decoration-color 0.2s;
+    &:hover{
+        color: #BC3324;
+        text-decoration-color: #BC3324;
+    }
 }
 
 .event-card__text{

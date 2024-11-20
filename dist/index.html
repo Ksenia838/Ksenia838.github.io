@@ -14,11 +14,13 @@
   <header class="page-header">
     <div class="page-header__container">
       <a href="#" class="page-header__logo">
-        <img src="assets/svg-sprite/logo.svg" class="page-header__logo-icon" alt="logo">
+        <svg class="page-header__logo-icon" width="202" height="147">
+          <use xlink:href="assets/icons/symbols.svg#logo"></use>
+        </svg>
       </a>
       <nav class="page-header__nav">
         <a href="events.html" class="page-header__nav-link">Мероприятия</a>
-        <a href="#" class="page-header__nav-link">Блог</a>
+        <a href="blog.html" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
       </nav>
@@ -30,6 +32,17 @@
   <main class="main">
     Контент
   </main>
+  <div class="pp">
+    <div class="pp__wrapper">
+      <form class="pp__form form">
+        <label class="field">
+          <span class="field__label">Имя*</span>
+          <input type="text" name="Имя" placeholder="Имя" class="field__input" required>
+        </label>
+
+      </form>
+    </div>
+  </div>
   <footer class="page-footer">
     Подвал
   </footer>
