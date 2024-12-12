@@ -1,7 +1,7 @@
 .reserve {
     display: grid;
     gap: 65px 11%;
-    grid-template-columns: 405px calc(89% - 405px);
+    grid-template-columns: 405px -calc(89% - 405px);
     grid-template-areas: 
       "checks scheme"
       "order legend"; 
@@ -23,3 +23,67 @@
 &__scheme {
     grid-area: scheme;
 }
+
+.reserve__scheme-wrapper {
+    position: relative;
+    width: 100%;
+ }
+
+.reserve__scheme-wrapper::after{
+    content: "";
+        display: block;
+        width: 100%;
+        padding-top: 51.15384%;
+    
+} 
+
+.reserve__scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.reserve__tickets {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.reserve__tickets__qty {
+   
+}
+
+.reserve__tickets__qty::after{
+    content: " " attr(data-caption) " | " attr(data-price);
+}
+
+.reserve__tickets__sum {
+  
+}
+
+.reserve__tickets__sum::after{
+    content: attr(data-currency);
+    margin-left: 4px;
+    font-size: 0.95em;
+}
+
+.reserve__tickets__total {
+   
+}
+
+.reserve__tickets__total::before{
+    content: attr(data-caption);
+      margin-right: 30px;
+}
+
+.reserve__tickets__total::after{
+    content: attr(data-currency);
+    margin-left: 4px;
+    font-size: 0.95em;
+}
+
+
+
