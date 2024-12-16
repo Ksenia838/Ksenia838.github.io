@@ -24,6 +24,17 @@
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
       </nav>
+
+      <a href="#" class="page-header__nav-user-link">
+        Александр С.
+        <svg class="page-header__user-icon" width="24" height="24">
+          <use xlink:href="assets/icons/symbols.svg#door"></use>
+        </svg>
+      </a>
+      <svg class="page-header__user-icon" width="21" height="18">
+        <use xlink:href="assets/icons/symbols.svg#user"></use>
+      </svg>
+
       <div class="page-header__right-block">
         <a href="#" class="btn page-header__user-btn">Войти</a>
       </div>
@@ -120,7 +131,7 @@
           <td class="table__td"></td>
           <td class="table__td">
             <svg class="table__td-icon">
-              <use xlink:href="assets/icons/symbols.svg#ok"></use>
+              <use xlink:href="assets/icons/symbols.svg#ok" width='26' height="26"></use>
             </svg>
           </td>
           <td class="table__td">
@@ -172,7 +183,35 @@
     </table>
   </main>
   <footer class="page-footer">
-    Подвал
+    <div class="page-footer__liners">
+
+    </div>
+    <div class="page-footer__block">
+      <div class="page-footer__block-links">
+        <a href="" class="page-footer__block-link">Календарь мароприятий</a>
+        <a href="" class="page-footer__block-link"></a>
+        <a href="" class="page-footer__block-link"></a>
+        <a href="" class="page-footer__block-link"></a>
+        <a href="" class="page-footer__block-link"></a>
+      </div>
+      <form class="page-footer__subscribe-form subscribe-form">
+        <h4 class="subscribe-form__title">Подпишись и будь в курсе происходящего</h4>
+        <div class="subscribe-form__wrapper">
+          <div class="subscribe-form__field-wrapper">
+            <input type="email" class="subscribe-form__input" placeholder="email" required />
+          </div>
+          <button type="submit" class="subscribe-form__submit">Подписаться</button>
+        </div>
+        <label class="subscribe-form__check">
+          <input type="checkbox" name="agree" class="check__input" required checked />
+          <span class="check__mark"></span>
+          <span class="check__label"></span>
+        </label>
+      </form>
+    </div>
+    <div class="page-footer__block2">
+
+    </div>
   </footer>
   <div class="pp" id="eventPP">
 
